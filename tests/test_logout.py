@@ -8,8 +8,8 @@ class TestLogout:
     def test_logout_from_personal_account(self, driver):
         driver.get(Urls.URL_LOGIN)
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.TITLE_FOR_PAGE_LOGIN)))
-        driver.find_element(*Locators.NAME_FOR_LOGIN).send_keys('AlekseyAlekseev_1914@yandex.ru')
-        driver.find_element(*Locators.PASSWORD_FOR_LOGIN).send_keys('11122253')
+        driver.find_element(*Locators.NAME_FOR_LOGIN).send_keys('AlekseyAlekseev_172634@yandex.ru')
+        driver.find_element(*Locators.PASSWORD_FOR_LOGIN).send_keys('1112113')
         driver.find_element(*Locators.BUTTON_LOGIN_IN_AUTORIZATION_PAGE).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.BUTTON_MAKE_ORDERS)))
         driver.find_element(*Locators.BUTTON_PERSONAL_ACCOUNT).click()
