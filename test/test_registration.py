@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions
 from helpers.urls import Urls
 from helpers.locators import Locators
 from conftest import driver
+from helpers.data import Data
 
 
 
@@ -17,7 +18,7 @@ class TestRegistration:
         driver.find_element(*Locators.LINK_FOR_REGISTRATION_ON_LOGIN_PAGE).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.NAME_FOR_REGISTRATION)))
         driver.find_element(*Locators.NAME_FOR_REGISTRATION).send_keys('Алёша')
-        driver.find_element(*Locators.EMAIL_FOR_REGISTRATION).send_keys('AlekseyAlekseev_172634@yandex.ru')
+        driver.find_element(*Locators.EMAIL_FOR_REGISTRATION).send_keys(Data.create_new_email_for_registration())
         driver.find_element(*Locators.PASSWORD_FOR_REGISTRATION).send_keys('1112113')
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.TITLE_FOR_PAGE_LOGIN)))
@@ -27,7 +28,7 @@ class TestRegistration:
         driver.get(Urls.URL_REGISTRATION)
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.NAME_FOR_REGISTRATION)))
         driver.find_element(*Locators.NAME_FOR_REGISTRATION).send_keys('Алёша_12_0123')
-        driver.find_element(*Locators.EMAIL_FOR_REGISTRATION).send_keys('AlekseyAlekseev_172124@yandex.ru')
+        driver.find_element(*Locators.EMAIL_FOR_REGISTRATION).send_keys(Data.create_new_email_for_registration())
         driver.find_element(*Locators.PASSWORD_FOR_REGISTRATION).send_keys('112')
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.ERROR_FOR_INCORRECT_PASSWORD)))
