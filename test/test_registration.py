@@ -21,7 +21,6 @@ class TestRegistration:
         driver.find_element(*Locators.PASSWORD_FOR_REGISTRATION).send_keys('1112113')
         driver.find_element(*Locators.REGISTRATION_BUTTON).click()
         WebDriverWait(driver, 5).until(expected_conditions.visibility_of_element_located((Locators.TITLE_FOR_PAGE_LOGIN)))
-        print(driver.current_url)
         assert driver.current_url == Urls.URL_LOGIN
 
     def test_registration_incorrect_password(self, driver):
