@@ -25,11 +25,11 @@ class Locators:
     LINK_SAUCES_CONSTRUCTOR = (By.XPATH ,'//span[text()="Соусы"]')#Вкладка Соусы в Конструкторе
     LINK_BUNS_CONSTRUCTOR=(By.XPATH,'//span[text()="Булки"]')#Вкладка Булки в Конструкторе
     LINK_FILLING_CONSTRUCTOR=(By.XPATH,'//span[text()="Начинки"]')#Вкладка Начинки в Конструкторе
-    FIRST_SAUCE = (By.XPATH,'//p [@class="BurgerIngredient_ingredient__text__yp3dH"][1]')
-    FIRST_BUNS = (By.XPATH , '// p[@class ="BurgerIngredient_ingredient__text__yp3dH"][1]')
-    FIRST_FILLING = (By.XPATH, '// p[@class ="BurgerIngredient_ingredient__text__yp3dH"][1]')
-    NEW_LINK_SAUCES_CONSTRUCTOR = (By.XPATH,'//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')
-    NEW_LINK_BUNS_CONSTRUCTOR = (By.XPATH, '//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')
-    NEW_LINK_FILLING_CONSTRUCTOR = (By.XPATH, '//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')
+    FIRST_SAUCE = (By.XPATH,'//p [@class="BurgerIngredient_ingredient__text__yp3dH"][1]')#Первый элемент во вкладке соусы в Конструкторе
+    FIRST_BUNS = (By.XPATH , '// p[@class ="BurgerIngredient_ingredient__text__yp3dH"][1]')#Первый элемент во вкладке соусы в Конструкторе
+    FIRST_FILLING = (By.XPATH, '// p[@class ="BurgerIngredient_ingredient__text__yp3dH"][1]')#Первый элемент во вкладке соусы в Конструкторе
+    NEW_LINK_SAUCES_CONSTRUCTOR = (By.XPATH,'//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')#Открытая вкладка соусы в Конструкторе
+    NEW_LINK_BUNS_CONSTRUCTOR = (By.XPATH, '//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')#Открытая вкладка Булки в Конструкторе
+    NEW_LINK_FILLING_CONSTRUCTOR = (By.XPATH, '//div [@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')#Открытая вкладка Начинки в Конструкторе
 
 
